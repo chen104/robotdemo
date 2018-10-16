@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.vmac.myrobot.view.StartActivity">
+    <LinearLayout
+        android:layout_width="368dp"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="10dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:layout_editor_absoluteX="8dp">
+        <TextView
+            android:id="@+id/tx_stat"
+            android:layout_width="match_parent"
+            android:layout_height="20dp"
+            android:text="待机"
+            />
+
+       <TextView
+           android:id="@+id/tx_view"
+           android:layout_width="match_parent"
+           android:layout_height="200dp"
+           android:text="显示结果"
+           />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <Button
+                android:id="@+id/bt_sentBroadcast"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送开始广播"
+                />
+
+            <Button
+                android:id="@+id/bt_sentBroadcastStop"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="发送关闭广播"
+                />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/bt_startService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="开始测试服务"
+            android:visibility="gone"
+            />
+        <Button
+            android:id="@+id/bt_stopService"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="停止测试服务"
+            android:visibility="gone"
+            />
+
+
+
+        <Button
+            android:id="@+id/bt_sendFileData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="发送数据"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/bt_playStream"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="播放数据"
+            android:visibility="gone"
+            />
+
+        <Button
+            android:id="@+id/bt_stranstor"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="转换数据"
+            android:visibility="gone"
+            />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
